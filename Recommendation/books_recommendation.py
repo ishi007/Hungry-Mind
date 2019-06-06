@@ -6,7 +6,6 @@ import csv
 import json
 import pandas as pd
 import os
-import click
 import shutil
 from boto3 import resource
 from boto3.dynamodb.conditions import Key, Attr
