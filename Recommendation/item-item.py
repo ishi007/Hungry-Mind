@@ -23,7 +23,7 @@ def most_rated_books(u_id):
 
     table = dynamodb.Table("hungrymind-mobilehub-593518188-Books")
     data_downloaded = table.scan()
-    table = dynamodb.Table("hungrymind-mobilehub-593518188-BookBorrow")
+    table = dynamodb.Table("hungrymind-mobilehub-593518188-Book_Borrow")
     data_downloaded2 = table.scan()
     
     books = pd.DataFrame.from_dict(json_normalize(data_downloaded['Items']))
