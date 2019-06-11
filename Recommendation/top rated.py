@@ -31,13 +31,13 @@ def top_rated_books():
     
     tr = []
     tr = np.asarray(top_rated.to_records(index=False))
-    top_rated_id = ""
+    top_rated_URL = ""
     
     for i in range(0,10):
-        top_rated_id = top_rated_id + str(tr[i][2])+" <br>"
-    print (top_rated_id)
+        top_rated_URL = top_rated_URL + str(tr[i][3])+" <br>"
+    #print (top_rated_URL)
     
-    return top_rated_id
+    return top_rated_URL
 
     
 if __name__ == '__main__':
