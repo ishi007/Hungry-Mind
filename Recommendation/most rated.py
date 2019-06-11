@@ -43,7 +43,7 @@ def most_rated_books():
     mr = np.asarray(most_r.to_records(index=False))
 
     for i in range(0,10):
-        most_rat_URL = most_rat_URL + str(mr[i][4])+" <br>"
+        most_rat_URL = most_rat_URL + str(mr[i][4])+" <br> "
     #print (most_rat_URL)
     
     return most_rat_URL
