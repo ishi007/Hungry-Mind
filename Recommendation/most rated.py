@@ -34,7 +34,7 @@ def most_rated_books():
     
     most_rated = books[books.ISBN.isin(rat_count.index)]
     most_r = most_rated.head(10)
-    most_rat_Id = ""
+    most_rat_URL = ""
     
     #print ('Most Rated Books are : ')
     #print (most_r.BookName)
@@ -43,10 +43,10 @@ def most_rated_books():
     mr = np.asarray(most_r.to_records(index=False))
 
     for i in range(0,10):
-        most_rat_Id = most_rat_Id + str(mr[i][3])+" <br>"
-    print (most_rat_Id)
+        most_rat_URL = most_rat_URL + str(mr[i][4])+" <br>"
+    #print (most_rat_URL)
     
-    return most_rat_Id
+    return most_rat_URL
 
    
 if __name__ == '__main__':
